@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>康穎貿易有限公司</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans TC", Arial, sans-serif;
+  color: #f5f5f5;
+  background: #080808;
+  line-height: 1.7;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d6b36a;
+}
+
+header {
+  min-height: 100vh;
+  padding: 160px 8% 100px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(214,179,106,0.22), transparent 30%),
+    linear-gradient(135deg, #080808, #1c1c1c);
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(214,179,106,0.5);
+  border-radius: 999px;
+  color: #d6b36a;
+  font-size: 14px;
+}
+
+header h1 {
+  font-size: 64px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+header p {
+  font-size: 20px;
+  color: #cfcfcf;
+  max-width: 620px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 14px 28px;
+  background: #d6b36a;
+  color: #111;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(214,179,106,0.25);
+}
+
+section {
+  max-width: 1150px;
+  margin: 90px auto;
+  padding: 52px;
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  background: #d6b36a;
+  margin-top: 10px;
+}
+
+section p {
+  color: #d8d8d8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 30px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.09);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(214,179,106,0.12);
+  border-color: rgba(214,179,106,0.45);
+}
+
+.card span {
+  font-size: 34px;
+}
+
+.card h3 {
+  margin: 16px 0 10px;
+  color: #fff;
+}
+
+.info-list p {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+strong {
+  color: #d6b36a;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #050505;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    margin: 0 8px;
+  }
+
+  header h1 {
+    font-size: 42px;
+  }
+
+  section {
+    margin: 50px 20px;
+    padding: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">PrimeElite</div>
+  <div class="nav-links">
+    <a href="#about">公司介紹</a>
+    <a href="#services">服務項目</a>
+    <a href="#info">公司資訊</a>
+    <a href="#contact">聯絡我們</a>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-content">
+    <span class="badge">Trade｜Business｜Consulting</span>
+    <h1>康穎貿易有限公司</h1>
+    <p>
+      PrimeElite Co., Ltd. 專注於國際貿易、商品流通與商業整合，
+      以穩定、效率與專業服務，協助客戶拓展市場合作機會。
+    </p>
+    <a class="btn" href="#contact">立即洽詢</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>公司介紹</h2>
+  <p>
+    康穎貿易有限公司致力於整合多元產業資源，提供具彈性與效率的商業合作模式。
+    我們重視長期合作關係，協助客戶在商品流通、進出口貿易與市場開發中建立穩定競爭力。
+  </p>
+</section>
+
+<section id="services">
+  <h2>服務項目</h2>
+
+  <div class="grid">
+    <div class="card">
+      <span>🌐</span>
+      <h3>國際貿易</h3>
+      <p>提供進出口貿易、商品流通與跨市場合作服務。</p>
+    </div>
+
+    <div class="card">
+      <span>📦</span>
+      <h3>商品流通</h3>
+      <p>涵蓋服飾、生活用品、配件與多元商品供應。</p>
+    </div>
+
+    <div class="card">
+      <span>⚙️</span>
+      <h3>設備供應</h3>
+      <p>提供機械設備相關之批發、零售與商業媒合。</p>
+    </div>
+
+    <div class="card">
+      <span>📊</span>
+      <h3>顧問服務</h3>
+      <p>提供管理、投資與產業合作策略建議。</p>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <h2>公司資訊</h2>
+  <div class="info-list">
+    <p><strong>公司名稱：</strong>康穎貿易有限公司</p>
+    <p><strong>英文名稱：</strong>PrimeElite Co., Ltd.</p>
+    <p><strong>統一編號：</strong>60342821</p>
+    <p><strong>負責人：</strong>歐綺婷</p>
+    <p><strong>資本額：</strong>新台幣 100 萬元</p>
+    <p><strong>地址：</strong>台中市北區館前路19號7樓之2</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>聯絡我們</h2>
+  <p>歡迎商業合作、商品洽詢與服務諮詢。</p>
+  <p><strong>Email：</strong>example@email.com</p>
+  <p><strong>電話：</strong>04-0000-0000</p>
+</section>
+
+<footer>
+  <p>© 2026 康穎貿易有限公司 PrimeElite Co., Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
